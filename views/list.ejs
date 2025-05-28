@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <title>TO_DO PROJECT</title>
 </head>
 <body>
-    <div class ="box">
+    <div class ="card">
         <h1>Todo list</h1>
     </div>
-    <div class="box">
+    <div class="card">
        <% for(var i=0 ; i< ejes.length ; i++){%>
+        <div class="items">
+             <input type = "checkbox">
              <p><%= ejes[i] %></p>
+        </div>
+           
       <% }%>
 
         <form action="/" method="POST">
